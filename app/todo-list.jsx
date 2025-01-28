@@ -12,7 +12,7 @@ export default function TooList() {
 
             <FokusButton 
                 title="Adicionar nova tarefa" 
-                onPress={() => router.push('/todo-form.jsx')} 
+                onPress={() => router.push('/todo-form')} 
                 icon={<IconPlus />}
                 outline
             />
