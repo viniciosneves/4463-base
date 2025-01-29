@@ -2,6 +2,7 @@ import { Pressable, StyleSheet, Text, View } from "react-native";
 import { FokusButton } from "../components/FokusButton";
 import { IconPlus, IconSave } from "../components/Icons"
 import { TextInput } from "react-native-gesture-handler";
+import { Heading } from "../components/Heading";
 
 export default function TodoForm() {
 
@@ -9,9 +10,7 @@ export default function TodoForm() {
         <View
             style={styles.container}
         >
-            <Text style={styles.heading}>
-                Adicionar tarefa:
-            </Text>
+            <Heading text="Adicionar tarefa:" />
             <View style={styles.actions}>
                 <Text style={styles.formHeading}>
                     Em que que você está trabalhando?
@@ -44,11 +43,6 @@ const styles = StyleSheet.create({
         alignItems: "center",
         backgroundColor: '#021123',
         gap: 40
-    },
-    heading: {
-        color: '#FFFFFF',
-        fontSize: 26,
-        textAlign: 'center'
     },
     actions: {
         paddingVertical: 24,
